@@ -1,6 +1,12 @@
 <template>
-  <Navbar />
-  <router-view />
+  <div id="test">
+    <div class="navbar">
+      <Navbar />
+    </div>
+    <div>
+      <router-view />
+    </div>
+  </div>
   <Footer />
 </template>
 <script>
@@ -24,5 +30,12 @@ export default {
 #app {
   min-height: 100vh;
   background-color: #ebc7f9;
+}
+#test {
+  display: flex;
+}
+
+.navbar {
+  display: flex;
 }
 </style>

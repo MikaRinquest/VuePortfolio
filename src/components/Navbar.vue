@@ -17,6 +17,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  flex-direction: column;
   font-size: 25px;
   border: 1px solid transparent;
   background-color: transparent;
