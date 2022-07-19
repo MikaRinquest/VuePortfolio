@@ -3,7 +3,7 @@
     <div class="navbar">
       <Navbar />
     </div>
-    <div>
+    <div class="content">
       <router-view />
     </div>
   </div>
@@ -28,14 +28,17 @@ export default {
 }
 
 #app {
+  background-color: #2b2b2c;
+  color: #f0f0f0;
   min-height: 100vh;
-  background-color: #ebc7f9;
 }
 #test {
   display: flex;
+  min-height: 95vh;
 }
 
 .navbar {
   display: flex;
+  max-width: 7vw;
 }
 </style>

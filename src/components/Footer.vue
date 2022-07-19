@@ -1,14 +1,14 @@
 <template>
   <div id="footer">
     <div class="links">
+      <a href="https://github.com/MikaRinquest" target="_blank">
+        <i class="fa-brands fa-github"></i
+      ></a>
       <a
         href="https://www.linkedin.com/in/mika-rinquest-975890237/"
         target="_blank"
       >
         <i class="fa-brands fa-linkedin"></i
-      ></a>
-      <a href="https://github.com/MikaRinquest" target="_blank">
-        <i class="fa-brands fa-github"></i
       ></a>
       <a href="https://codepen.io/mikarinquest" target="_blank">
         <i class="fa-brands fa-codepen"></i
@@ -30,7 +30,7 @@ export default {
 <style>
 #footer {
   min-height: 5vh;
-  background-color: #b391c0;
+  background-color: #4f4f4f;
   /* display: flex;
   flex-direction: column;
   justify-content: center; */
@@ -39,6 +39,12 @@ export default {
 .links {
   display: flex;
   justify-content: center;
+}
+
+.fa-brands {
+  font-size: 25px;
+  color: white;
+  padding-right: 5px;
 }
 
 .fa-linkedin:hover {
@@ -60,5 +66,6 @@ export default {
 
 .c-info {
   font-weight: 1000;
+  color: white;
 }
 </style>

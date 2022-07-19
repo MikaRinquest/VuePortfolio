@@ -5,7 +5,8 @@
       <h2>Aspiring Web Developer</h2>
     </div>
     <div class="image">
-      <img src="" alt="Placeholder" class="me" />
+      <img src="" alt="Placeholder" class="myself" />
+      <!--  ../assets/MikaRinquest.jpg  -->
     </div>
   </section>
 </template>
@@ -29,7 +30,7 @@
   display: flex;
 }
 
-.me {
+.myself {
   width: 500px;
 }
 </style>
