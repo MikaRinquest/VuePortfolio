@@ -1,84 +1,99 @@
 <template>
   <section id="personal">
-    <div class="image">
-      <img
-        src="https://i.postimg.cc/hPzQLtcR/AboutMe.jpg "
-        alt="An Image of Myself"
-        class="LcImg"
-      />
-    </div>
-    <div class="info">
-      <h3>
+    <div class="head">
+      <h2>
         <span class="ul">About <span class="me">Me</span></span>
-      </h3>
-      <p>
-        I am a quick learner that prefers to get things done as soon as
-        possible. While I am an introvert with everyone except those I am
-        comfortable with, I am always there to help when someone needs
-        assistance. Occasionally, I enjoy hiking mountains but prefer the
-        indoors. In the beginning, I became interested in Tech because when I
-        would see a website or a game, I would wonder how much work or what
-        exactly the team behind it did to make it happen. When I saw an
-        advertisement for the internship at Life Choices Academy, I saw the
-        opportunity to learn more about coding.
-      </p>
+      </h2>
+    </div>
+    <div class="about-me">
+      <div class="image">
+        <img
+          src="https://i.postimg.cc/hPzQLtcR/AboutMe.jpg "
+          alt="An Image of Myself"
+          class="LcImg"
+        />
+      </div>
+      <div class="info">
+        <p>
+          I am a quick learner that prefers to get things done as soon as
+          possible. While I am an introvert with everyone except those I am
+          comfortable with, I am always there to help when someone needs
+          assistance. Occasionally, I enjoy hiking mountains but prefer the
+          indoors. In the beginning, I became interested in Tech because when I
+          would see a website or a game, I would wonder how much work or what
+          exactly the team behind it did to make it happen. When I saw an
+          advertisement for the internship at Life Choices Academy, I saw the
+          opportunity to learn more about coding.
+        </p>
+      </div>
     </div>
   </section>
   <section id="skills">
-    <div class="group1">
-      <div class="flipcard">
-        <div class="flipcard-inner">
-          <div class="flipcard-front">
-            <i class="fa-brands fa-html5 icon"></i>
+    <ul class="list">
+      <li class="list-item">Education</li>
+      <li class="list-item">|</li>
+      <li class="list-item">Skills</li>
+    </ul>
+    <div class="tab-content">
+      <div class="learnt">
+        <div class="group1">
+          <div class="flipcard">
+            <div class="flipcard-inner">
+              <div class="flipcard-front">
+                <i class="fa-brands fa-html5 icon"></i>
+              </div>
+              <div class="flipcard-back">
+                <h3>HTML</h3>
+                <p>The first language learnt when coming to Lifechoices</p>
+              </div>
+            </div>
           </div>
-          <div class="flipcard-back">
-            <h3>HTML</h3>
-            <p>The first language learnt when coming to Lifechoices</p>
+          <div class="flipcard">
+            <div class="flipcard-inner">
+              <div class="flipcard-front">
+                <i class="fa-brands fa-css3 icon"></i>
+              </div>
+              <div class="flipcard-back">
+                <h3>CSS</h3>
+              </div>
+            </div>
+          </div>
+          <div class="flipcard">
+            <div class="flipcard-inner">
+              <div class="flipcard-front">
+                <i class="fa-solid fa-database icon"></i>
+              </div>
+              <div class="flipcard-back">
+                <h3>MySQL</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="group2">
+          <div class="flipcard">
+            <div class="flipcard-inner">
+              <div class="flipcard-front">
+                <i class="fa-brands fa-js icon"></i>
+              </div>
+              <div class="flipcard-back">
+                <h3>Javascript</h3>
+              </div>
+            </div>
+          </div>
+          <div class="flipcard">
+            <div class="flipcard-inner">
+              <div class="flipcard-front">
+                <i class="fa-brands fa-vuejs icon"></i>
+              </div>
+              <div class="flipcard-back">
+                <h3>Vue JS</h3>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="flipcard">
-        <div class="flipcard-inner">
-          <div class="flipcard-front">
-            <i class="fa-brands fa-css3 icon"></i>
-          </div>
-          <div class="flipcard-back">
-            <h3>CSS</h3>
-          </div>
-        </div>
-      </div>
-      <div class="flipcard">
-        <div class="flipcard-inner">
-          <div class="flipcard-front">
-            <i class="fa-solid fa-database icon"></i>
-          </div>
-          <div class="flipcard-back">
-            <h3>MySQL</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="group2">
-      <div class="flipcard">
-        <div class="flipcard-inner">
-          <div class="flipcard-front">
-            <i class="fa-brands fa-js icon"></i>
-          </div>
-          <div class="flipcard-back">
-            <h3>Javascript</h3>
-          </div>
-        </div>
-      </div>
-      <div class="flipcard">
-        <div class="flipcard-inner">
-          <div class="flipcard-front">
-            <i class="fa-brands fa-vuejs icon"></i>
-          </div>
-          <div class="flipcard-back">
-            <h3>Vue JS</h3>
-          </div>
-        </div>
+      <div class="education">
+        <h2>placeholder</h2>
       </div>
     </div>
   </section>
@@ -90,7 +105,29 @@ export default {};
 /* Bio */
 #personal {
   display: flex;
-  min-height: 95vh;
+  flex-direction: column;
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin-top: 25px;
+}
+
+.list-item {
+  padding-right: 15px;
+  font-size: 25px;
+}
+
+.about-me {
+  display: flex;
+  margin-top: 20px;
 }
 
 .image {
@@ -112,6 +149,7 @@ export default {};
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-right: 15px;
 }
 
 .ul {
@@ -121,6 +159,11 @@ export default {};
 .me {
   color: #d08eea;
 }
+
+/* Tab */
+/* .tab-content {
+  position: absolute;
+} */
 
 /* Skills */
 #skills {

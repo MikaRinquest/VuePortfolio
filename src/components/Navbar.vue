@@ -1,6 +1,6 @@
 <template>
   <div class="sidebar">
-    <button @click="toggleNav" class="toggle">Menu</button>
+    <button class="toggle">Menu</button>
     <nav id="navbar">
       <router-link to="/">Home</router-link>
       <router-link to="/about">About</router-link>
@@ -13,26 +13,16 @@
 <script>
 export default {
   name: "Navbar",
-  data() {
-    return {
-      active: false,
-    };
-  },
-  methods: {
-    toggleNav() {
-      this.active = !this.active;
-    },
-  },
-  computed: {
-    sidebar() {},
-  },
+  data() {},
+  methods: {},
 };
 </script>
 <style scoped>
 .sidebar {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  float: left;
+  position: fixed;
 }
 
 #navbar {

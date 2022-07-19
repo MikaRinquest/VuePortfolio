@@ -21,6 +21,11 @@ export default {
 </script>
 
 <style>
+@font-face {
+  font-family: "Title";
+  src: url();
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -40,5 +45,9 @@ export default {
 .navbar {
   display: flex;
   max-width: 7vw;
+}
+
+.content {
+  margin-left: 7vw;
 }
 </style>
