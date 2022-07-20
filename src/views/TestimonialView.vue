@@ -10,4 +10,4 @@ export default {
   components: { Testimonial },
 };
 </script>
-<style></style>
+<style scoped></style>

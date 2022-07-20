@@ -31,7 +31,7 @@
 <script>
 export default {};
 </script>
-<style>
+<style scoped>
 .holder {
   display: flex;
   height: 95vh;

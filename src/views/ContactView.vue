@@ -10,4 +10,4 @@ export default {
   components: { Contact },
 };
 </script>
-<style></style>
+<style scoped></style>

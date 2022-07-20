@@ -27,7 +27,7 @@ export default {
   name: "Footer",
 };
 </script>
-<style>
+<style scoped>
 #footer {
   min-height: 5vh;
   background-color: #4f4f4f;
