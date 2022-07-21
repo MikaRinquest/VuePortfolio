@@ -49,5 +49,6 @@ export default {
 
 .content {
   margin-left: 7vw;
+  width: 93vw;
 }
 </style>

@@ -5,8 +5,11 @@
       <h2>Aspiring Web Developer</h2>
     </div>
     <div class="image">
-      <img src="" alt="Placeholder" class="myself" />
-      <!--  ../assets/MikaRinquest.jpg  -->
+      <!-- <img
+        src="https://i.ibb.co/fxc5B8z/Mika-Rinquest.jpg"
+        alt="Placeholder"
+        class="myself"
+      /> -->
     </div>
   </section>
 </template>
