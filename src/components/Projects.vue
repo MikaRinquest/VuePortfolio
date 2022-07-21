@@ -56,7 +56,7 @@ export default {
         },
         {
           id: "3",
-          name: "Portfolio",
+          name: "Bootstrap    Portfolio",
           image: "https://i.ibb.co/QvrZFqD/2-portfolio.png",
           brief: "A portfolio made using HTML, CSS and Bootstrap.",
           github: "https://github.com/MikaRinquest/Portfolio_Project.git",
@@ -157,6 +157,8 @@ export default {
 .project-img {
   width: 300px;
   aspect-ratio: 1;
+  padding-bottom: 15px;
+  padding-right: 15px;
 }
 
 .flipcard-back {

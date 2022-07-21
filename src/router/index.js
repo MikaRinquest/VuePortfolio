@@ -21,8 +21,9 @@ const routes = [
 
   {
     path: "/projects/:id",
-    name: "Single",
+    name: "SingleView",
     component: () => import("../views/SingleView.vue"),
+    props: true,
   },
 
   {

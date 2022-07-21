@@ -93,13 +93,43 @@
         </div>
       </div>
       <div class="education">
-        <h2>placeholder</h2>
+        <div v-for="education in resume" :key="education.id">
+          <div class="school">
+            <h2>{{ education.place }}</h2>
+            <p>{{ education.time }}</p>
+          </div>
+          <div class="lca">
+            <h3>{{ education.occupation }}</h3>
+            <p>{{ education.desc }}</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 </template>
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      resume: [
+        {
+          id: "1",
+          place: "Life Choices Academy",
+          time: "2022 - 2022",
+          occupation: "Intern",
+          desc: "Currently studying at LCA ",
+        },
+        {
+          id: "2",
+          place: "Curro Meridian Pinehurst",
+          time: "2017 - 2021",
+          occupation: "Studen",
+          desc: "Matriculated from Meridian Pinehurst with a Bachelors Pass ",
+        },
+      ],
+    };
+  },
+};
 </script>
 <style scoped>
 /* Bio */
@@ -254,5 +284,18 @@ export default {};
 .fa-vuejs {
   font-size: 150px;
   color: #42b883;
+}
+
+.education {
+  display: flex;
+  justify-content: center;
+}
+
+.school {
+  width: 50%;
+}
+
+.lca {
+  width: 50%;
 }
 </style>
