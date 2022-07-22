@@ -21,7 +21,7 @@ export default {
           name: "Jason Wandrag",
           role: "Lecturer",
           description: "lorem ipsum",
-          image: "https://i.ibb.co/LgY6c2d/jason.jpg",
+          image: "https://i.postimg.cc/nh2tF84G/jason.jpg",
         },
         {
           id: "2",
@@ -29,7 +29,7 @@ export default {
           role: "Colleague",
           description:
             "He has an amazing work ethic, once he sets his mind on something he doesn't stop until it is done.",
-          image: "https://i.ibb.co/j3gHf02/IMG-20220422-WA0005.jpg",
+          image: "https://i.postimg.cc/BQx0zPty/clayton.jpg",
         },
         {
           id: "3",
@@ -37,7 +37,7 @@ export default {
           role: "Colleague",
           description:
             "Mika is exceptional in the work he does, he is always willing to lend a helping hand. He is very passionate and will succeed in anything he does.",
-          image: "https://i.ibb.co/VSF5YmQ/IMG-20220620-WA0021.jpg",
+          image: "https://i.postimg.cc/52bVW9Ct/chanique.jpg",
         },
         {
           id: "4",
@@ -45,7 +45,7 @@ export default {
           role: "Colleague",
           description:
             "Mika is a fine young man, eloquent in his dealings and always willing to help others, quick and nimble in handling situations.",
-          image: "https://i.ibb.co/QNMDK13/abdool.jpg",
+          image: "https://i.postimg.cc/xCJr3cW6/abdool.jpg",
         },
         {
           id: "5",
@@ -53,7 +53,7 @@ export default {
           role: "Colleague",
           description:
             "Mika is a wonderful person that is always ready to help the next at any cost. All while still completing tasks on time and splendidy.",
-          image: "https://i.ibb.co/dmFzSv1/abu.jpg",
+          image: "https://i.postimg.cc/YqJv6WZs/abu.jpg",
         },
         {
           id: "6",
@@ -61,7 +61,7 @@ export default {
           role: "Colleague",
           description:
             "Mika is exceptional in the work he does, he is always willing to lend a helping hand. He is very passionate and will succeed in anything he does.",
-          image: "https://i.ibb.co/CMhkNjj/isma-eel.jpg",
+          image: "https://i.postimg.cc/HxBJXP1w/isma-eel.jpg",
         },
       ],
     };
