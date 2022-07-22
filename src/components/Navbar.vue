@@ -7,7 +7,7 @@
       <router-link to="/contact">Contact</router-link>
     </nav>
     <button @click="showNavbar()" class="btn"><i class='bx bx-menu'></i></button>
-    <nav id="navbar2">
+    <nav id="navbar2" class="active">
       <div class="close-btn">
       <button @click="removeNavbar()" class="close"><i class='bx bx-exit-fullscreen' ></i></button>
       </div>
@@ -87,10 +87,16 @@ a {
   font-size: 25px;
 }
 
-@media only screen and (max-width:1410px){
+@media only screen and (max-width:1310px){
   #navbar1{
     display: none;
     }
+
+    #navbar{
+      transition: all 0.6s linear;
+    }
+
+
 
     a{
         font-size: 30px;

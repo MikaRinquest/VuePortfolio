@@ -48,13 +48,12 @@ export default {
 }
 
 .content {
-  width: 90vw;
-  margin-left:8vw;
+  width: 95vw;
 }
 
-@media only screen and (max-width: 1410px){
+/* @media only screen and (max-width: 1410px){
 
-}
+} */
 
 @media only screen and (max-width:450px){
   .content{
