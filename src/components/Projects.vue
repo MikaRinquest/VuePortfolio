@@ -1,19 +1,23 @@
 <template>
   <h2 class="heading">PROJECTS</h2>
+ 
   <div class="tut">
     <div class="help">
-      <p>Click on a project to view more information on it.</p>
+      <p class="click">Click on a project to view more information on it.</p>
     </div>
   </div>
   <div id="holder">
     <div v-for="project in projects" :key="project.id" class="flipcard">
       <!-- <div class="flipcard-inner">
         <div class="flipcard-front"> -->
+
       <router-link
         :to="{ name: 'SingleView', params: { id: project.id } }"
         class="link"
         ><img :src="project.image" class="project-img"
       /></router-link>
+
+          
       <!-- <h3>{{ project.name }}</h3> -->
       <!-- </div>
         <div class="flipcard-back">
@@ -124,20 +128,20 @@ export default {
   padding-bottom: 15px;
 }
 
-.tut {
-  display: flex;
-  justify-content: end;
-  margin-right: 90px;
-  height: 150px;
+
+
+.tut {   flex-wrap: wrap;
+  /* margin-left: 98px; */
+  margin-bottom:20px;
   background-color: red;
   font-size: 20px;
-  height: 50px;
   box-shadow: 0px 0px 10px 5px red;
-  display: flex;
-  flex-wrap: wrap;
 }
 
+
+
 .help {
+ text-align: center;
 }
 
 #holder {
@@ -145,6 +149,7 @@ export default {
   justify-content: center;
   flex-wrap: wrap;
 }
+
 
 .flipcard {
   background-color: transparent;
@@ -172,10 +177,14 @@ export default {
   box-shadow: 0 0 10px 5px #9e70ba;
 }
 
+
+
+
 @media only screen and (max-width: 1150px) {
   .tut {
     justify-content: center;
   }
+
 
   .flipcard {
     width: 40%;
@@ -190,11 +199,10 @@ export default {
 
   .tut {
     justify-content: center;
-    width: 200px;
   }
 
   .flipcard {
-    width: 100%;
+    width: 95%;
   }
 }
 
@@ -210,7 +218,6 @@ export default {
 
   .project-img {
     width: 250px;
-    margin-right: 30px;
   }
 }
 

@@ -1,4 +1,5 @@
 <template>
+    <h2 class="heading">Testimonials</h2>
   <div id="hover">
     <div v-for="testimonial in testimonials" :key="testimonial.id">
       <div class="t-hold">
@@ -69,8 +70,13 @@ export default {
 };
 </script>
 <style scoped>
+.heading{
+  text-align: center;
+}
+
 #hover {
   display: flex;
+  justify-content:center;
   flex-wrap: wrap;
   margin-top: 25px;
   margin-left: 30px;
@@ -101,6 +107,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  padding-bottom:10px;
 }
 
 .t-hold:hover .t-info {
@@ -112,5 +119,21 @@ export default {
   height: 300px;
   border-radius: 3px;
   border: 3px solid #94602b;
+}
+
+@media only screen and (max-width:490px){
+  .t-hold{
+    width: 250px;
+  }
+
+  .t-info{
+    width: 200px;
+    height:250px;
+  }
+
+  .t-image{
+    width:200px;
+    height:250px;
+  }
 }
 </style>

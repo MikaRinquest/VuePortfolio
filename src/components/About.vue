@@ -29,12 +29,13 @@
     </div>
   </section>
   <section id="skills">
-    <ul class="list">
+    <!-- <ul class="list">
       <li class="list-item">Education</li>
       <li class="list-item">|</li>
       <li class="list-item">Skills</li>
-    </ul>
+    </ul> -->
     <div class="tab-content">
+      <h2 class="title">Skills</h2>
       <div class="learnt">
         <div class="group1">
           <div class="flipcard">
@@ -44,7 +45,6 @@
               </div>
               <div class="flipcard-back">
                 <h3>HTML</h3>
-                <p>The first language learnt when coming to Lifechoices</p>
               </div>
             </div>
           </div>
@@ -92,8 +92,9 @@
           </div>
         </div>
       </div>
+        <h2 class="title">Education</h2>
       <div class="education">
-        <div v-for="education in resume" :key="education.id">
+        <div v-for="education in resume" :key="education.id" class="mobile">
           <div class="school">
             <h2>{{ education.place }}</h2>
             <p>{{ education.time }}</p>
@@ -123,7 +124,7 @@ export default {
           id: "2",
           place: "Curro Meridian Pinehurst",
           time: "2017 - 2021",
-          occupation: "Studen",
+          occupation: "Student",
           desc: "Matriculated from Meridian Pinehurst with a Bachelors Pass ",
         },
       ],
@@ -174,12 +175,15 @@ export default {
   border-radius: 10%;
 }
 
+
+
 .info {
-  width: 50%;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-right: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size:20px;
 }
 
 .ul {
@@ -194,6 +198,10 @@ export default {
 /* .tab-content {
   position: absolute;
 } */
+
+.title{
+  text-align: center;
+}
 
 /* Skills */
 #skills {
@@ -242,6 +250,13 @@ export default {
   background-color: #68626d;
   color: white;
   transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flipcard-back > h3 {
+  font-size:30px;
 }
 
 .group1 {
@@ -289,13 +304,114 @@ export default {
 .education {
   display: flex;
   justify-content: center;
+  margin-bottom: 10px;
+}
+
+.mobile{
+border: 2px solid #68626d;
+margin-left:15px;
 }
 
 .school {
   width: 50%;
+  /*  class="title" */
 }
 
 .lca {
-  width: 50%;
+  justify-content: center;
 }
+
+@media only screen and (max-width:1200px){
+  .about-me{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width:800px){
+  .LcImg{
+    width: 400px;
+  }
+
+.fa-html5 {
+  font-size: 75px;
+}
+
+.fa-css3 {
+  font-size: 75px;
+}
+
+.fa-database {
+  font-size: 75px;
+}
+
+.fa-js {
+  font-size: 75px;
+}
+
+.fa-vuejs {
+  font-size: 75px;
+}
+}
+
+
+@media only screen and (max-width:750px){
+.education{
+  flex-direction: column;
+}
+
+.mobile{
+  width:500px;
+  margin-bottom:15px;
+}
+
+}
+
+@media only screen and (max-width:600px){
+  .LcImg{
+    width: 250px;
+    height: 200px;
+  }
+
+.info{
+  margin-top:10px;
+}
+
+  .info > p{
+    font-size: 13px;
+  }
+
+  .flipcard-back > h3{
+    font-size: 13px;
+  }
+
+.mobile{
+  width:250px;
+}
+
+
+}
+
+@media only screen and (max-width:375px){
+    .fa-html5 {
+  font-size: 50px;
+}
+
+.fa-css3 {
+  font-size: 50px;
+}
+
+.fa-database {
+  font-size: 50px;
+}
+
+.fa-js {
+  font-size: 50px;
+}
+
+.fa-vuejs {
+  font-size: 50px;
+}
+}
+
 </style>

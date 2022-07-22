@@ -28,7 +28,7 @@ export default {
 <style scoped>
 #footer {
   min-height: 5vh;
-  background-color: #4f4f4f;
+  background-color: #484554;
   /* display: flex;
   flex-direction: column;
   justify-content: center; */

@@ -46,11 +46,11 @@ export default {
   data() {
     return {
       id: this.$route.params.id,
-      projects: [
+       projects: [
         {
           id: "1",
           name: "First portfolio",
-          image: "https://i.ibb.co/0cddZsF/1-portfolio.png",
+          image: "https://i.postimg.cc/RFV7ktMT/1-portfolio.png",
           brief: "First ever portfolio made.",
           github: "https://github.com/MikaRinquest/Mock-Portfolio.git",
           netlify: "https://relaxed-pie-a66d0f.netlify.app",
@@ -59,7 +59,7 @@ export default {
         {
           id: "2",
           name: "Calculator",
-          image: "https://i.ibb.co/v47jSv0/1-calc.png",
+          image: "https://i.postimg.cc/wBk542dv/1-calc.png",
           brief: "A functioning calculator made with javascript.",
           github: "https://github.com/MikaRinquest/Calculator.git",
           netlify: "https://poetic-creponne-631b3b.netlify.app",
@@ -68,7 +68,7 @@ export default {
         {
           id: "3",
           name: "Bootstrap Portfolio",
-          image: "https://i.ibb.co/QvrZFqD/2-portfolio.png",
+          image: "https://i.postimg.cc/Gt4k21T8/2-portfolio.png",
           brief: "A portfolio made using HTML, CSS and Bootstrap.",
           github: "https://github.com/MikaRinquest/Portfolio_Project.git",
           netlify: "https://mika-portfolio.netlify.app",
@@ -77,7 +77,7 @@ export default {
         {
           id: "4",
           name: "BMI Calculator",
-          image: "https://i.ibb.co/cgwMhs5/bmi-calc.png",
+          image: "https://i.postimg.cc/xCxvnd8V/bmi-calc.png",
           brief: "A calculator made that calculates one's body mass index.",
           github: "https://github.com/MikaRinquest/BMI-Calc.git",
           netlify: "https://bejewelled-biscochitos-3bfff1.netlify.app",
@@ -86,17 +86,17 @@ export default {
         {
           id: "5",
           name: "Temp Calculator",
-          image: "https://i.ibb.co/4RvBTdT/temp-calc.png",
+          image: "https://i.postimg.cc/CLZNMbbP/temp-calc.png",
           brief:
             "A calculator that converts the temperature from Ceslius to Fahrenheit and vice-versa.",
           github: "https://github.com/MikaRinquest/Temp_Calc.git",
           netlify: "https://guileless-tanuki-e87f6d.netlify.app",
-          type: "CSS",
+          type: "unknown",
         },
         {
           id: "6",
           name: "To-Do List",
-          image: "https://i.ibb.co/CWVYvPV/todo.png",
+          image: "https://i.postimg.cc/QMDkqPww/todo.png",
           brief: "A functional to do list made with HTML, CSS and Javascript.",
           github: "https://github.com/MikaRinquest/ToDoList.git",
           netlify: "https://teal-cobbler-da2482.netlify.app",
@@ -223,7 +223,7 @@ export default {
 
   .card {
     width: 250px;
-    height: 400px;
+    min-height: 400px;
     border: 3px solid #45433d;
   }
 
