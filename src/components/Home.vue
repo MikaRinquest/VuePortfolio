@@ -18,7 +18,7 @@
 #home {
   display: flex;
   min-height: 90vh;
-  background-image: url("https://i.postimg.cc/DzCcxm7b/home.png");
+  background-image: url("https://i.postimg.cc/2yYk5SN6/home.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }

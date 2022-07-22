@@ -29,7 +29,7 @@ export default {
           role: "Colleague",
           description:
             "He has an amazing work ethic, once he sets his mind on something he doesn't stop until it is done.",
-          image: "https://i.postimg.cc/BQx0zPty/clayton.jpg",
+          image: "https://i.postimg.cc/nrf81R3w/clayton.jpg",
         },
         {
           id: "3",
