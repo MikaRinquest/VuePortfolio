@@ -1,21 +1,41 @@
 <template>
-  <div class="project-holder">
-    <div class="project-img">
-      <img :src="project.image" />
-    </div>
-    <div class="project-info">
-      <div class="text">
-        <h3>{{ project.name }}</h3>
-        <p>{{ project.brief }}</p>
+  <div class="holder">
+    <div class="card">
+      <div class="name">
+        <h2>{{ project.name }}</h2>
       </div>
-      <div class="live">
-        <h3>Check out:</h3>
-        <a
-          :href="project.github"
-          class="fa-brands fa-github"
-          target="_blank"
-        ></a>
-        <a :href="project.netlify" class="bx bxl-netlify" target="_blank"></a>
+      <div class="image">
+        <img :src="project.image" class="p-image" />
+      </div>
+      <div class="info">
+        <div class="type">
+          <h4>[ {{ project.type }} ]</h4>
+        </div>
+        <div class="desc">
+          <p>{{ project.brief }}</p>
+        </div>
+        <div class="border"></div>
+        <div class="p-links">
+          <div class="git">
+            <p class="words">
+              Github:
+              <a
+                :href="project.github"
+                class="bx bxl-github"
+                target="_blank"
+              ></a>
+            </p>
+          </div>
+          <div class="net">
+            <p class="words">
+              / Netlify:<a
+                :href="project.netlify"
+                class="bx bxl-netlify"
+                target="_blank"
+              ></a>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -102,16 +122,127 @@ export default {
 };
 </script>
 <style scoped>
-.project-holder {
+.holder {
   display: flex;
+  justify-content: center;
 }
 
-.project-info {
-  width: 70%;
+.card {
+  background-color: #c9b253;
+  color: black;
+  width: 400px;
+  margin-top: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border: 5px solid #45433d;
+}
+
+.name {
   display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  text-align: center;
+  justify-content: flex-end;
+  margin: 15px;
+  padding-right: 5px;
+  background: #c9b253;
+  box-shadow: 2px 2px 0px #8b7b39, -2px -2px 0px #ffe96d;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+}
+
+.p-image {
+  border: 5px solid #706647;
+  width: 372px;
+  height: 348px;
+}
+
+.info {
+  background-color: #ffbc85;
+  margin: 10px;
+  border: 5px solid #4c4637;
+}
+
+.desc {
+  padding-bottom: 25px;
+}
+
+.border {
+  border-top: 1px solid black;
+  width: 325px;
+  margin-left: 5px;
+}
+
+.p-links {
+  display: flex;
+  justify-content: end;
+}
+
+.words {
+  display: inline-flex;
+}
+
+.bxl-github {
+  padding-right: 3px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+.bxl-netlify {
+  padding-right: 3px;
+  text-decoration: none;
+  color: #00ad9f;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 475px) {
+  .card {
+    width: 350px;
+    border: 4px solid #45433d;
+  }
+
+  .p-image {
+    width: 300px;
+    border: 4px solid #706647;
+  }
+
+  .info {
+    border: 4px solid #4c4637;
+  }
+
+  .border {
+    width: 275px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .content {
+    width: 90vw;
+  }
+
+  .card {
+    width: 250px;
+    height: 400px;
+    border: 3px solid #45433d;
+  }
+
+  .p-image {
+    width: 175px;
+    height: 200px;
+    border: 3px solid #706647;
+  }
+
+  .info {
+    border: 3px solid #4c4637;
+  }
+
+  .border {
+    width: 175px;
+  }
+
+  .p-links {
+    justify-content: center;
+  }
 }
 </style>

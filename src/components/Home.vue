@@ -17,8 +17,8 @@
 <style scoped>
 #home {
   display: flex;
-  min-height: 90vh;
-  background-image: url("https://i.postimg.cc/2yYk5SN6/home.png");
+  min-height: 95vh;
+  background-image: url("https://i.postimg.cc/50cmbVzP/home-loop.gif");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -39,4 +39,6 @@
 .myself {
   width: 500px;
 }
+
+/* Card */
 </style>

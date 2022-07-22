@@ -15,10 +15,8 @@
       ></a>
     </div>
     <div class="copyright">
-      <p class="c-info">
-        <i class="fa-solid fa-copyright"></i>
-        2022 Mika Rinquest
-      </p>
+      <i class="fa-solid fa-copyright"></i>
+      <p class="c-info">2022 Mika Rinquest</p>
     </div>
   </div>
 </template>
@@ -67,5 +65,6 @@ export default {
 .c-info {
   font-weight: 1000;
   color: white;
+  padding-left: 5px;
 }
 </style>

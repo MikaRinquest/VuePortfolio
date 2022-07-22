@@ -1,9 +1,17 @@
 <template>
+  <h2 class="heading">PROJECTS</h2>
+  <div class="tut">
+    <div class="help">
+      <p>Click on a project to view more information on it.</p>
+    </div>
+  </div>
   <div id="holder">
     <div v-for="project in projects" :key="project.id" class="flipcard">
       <!-- <div class="flipcard-inner">
         <div class="flipcard-front"> -->
-      <router-link :to="{ name: 'SingleView', params: { id: project.id } }"
+      <router-link
+        :to="{ name: 'SingleView', params: { id: project.id } }"
+        class="link"
         ><img :src="project.image" class="project-img"
       /></router-link>
       <!-- <h3>{{ project.name }}</h3> -->
@@ -110,6 +118,28 @@ export default {
   color: black;
 }
 
+.heading {
+  text-align: center;
+  color: white;
+  padding-bottom: 15px;
+}
+
+.tut {
+  display: flex;
+  justify-content: end;
+  margin-right: 90px;
+  height: 150px;
+  background-color: red;
+  font-size: 20px;
+  height: 50px;
+  box-shadow: 0px 0px 10px 5px red;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.help {
+}
+
 #holder {
   display: flex;
   justify-content: center;
@@ -124,8 +154,67 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
 }
 
+.project-img {
+  width: 300px;
+  aspect-ratio: 1;
+  transition: transform 0.2s;
+}
+
+.link {
+  padding-right: 10px;
+}
+
+.project-img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px 5px #9e70ba;
+}
+
+@media only screen and (max-width: 1150px) {
+  .tut {
+    justify-content: center;
+  }
+
+  .flipcard {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  #holder {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .tut {
+    justify-content: center;
+    width: 200px;
+  }
+
+  .flipcard {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  #holder {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .tut {
+    justify-content: center;
+  }
+
+  .project-img {
+    width: 250px;
+    margin-right: 30px;
+  }
+}
+
+/*
 .flipcard-inner {
   position: relative;
   width: 100%;
@@ -154,12 +243,7 @@ export default {
   align-items: center;
 }
 
-.project-img {
-  width: 300px;
-  aspect-ratio: 1;
-  padding-bottom: 15px;
-  padding-right: 15px;
-}
+
 
 .flipcard-back {
   background-color: #68626d;
@@ -175,26 +259,5 @@ export default {
   display: flex;
   flex-direction: column;
   flex-direction: column;
-}
-
-.fa-brands {
-  color: white;
-  text-decoration: none;
-  padding-right: 5px;
-  font-size: 25px;
-}
-
-.fa-brands:hover {
-  color: #1d1a1a;
-}
-
-.bx {
-  color: white;
-  text-decoration: none;
-  font-size: 25px;
-}
-
-.bx:hover {
-  color: #00ad9f;
-}
+} */
 </style>
