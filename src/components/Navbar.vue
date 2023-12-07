@@ -6,10 +6,10 @@
       <router-link to="/testimonials">Testimonials</router-link>
       <router-link to="/contact">Contact</router-link>
     </nav>
-    <button @click="showNavbar()" class="btn"><i class='bx bx-menu'></i></button>
-    <nav id="navbar2" class="active">
+    <button @click="nav = !nav" class="btn"><i class='bx bx-menu'></i></button>
+    <nav id="navbar2" class="active" v-if="nav">
       <div class="close-btn">
-      <button @click="removeNavbar()" class="close"><i class='bx bx-exit-fullscreen' ></i></button>
+      <button @click="nav = !nav" class="close"><i class='bx bx-exit-fullscreen' ></i></button>
       </div>
       <router-link to="/">Home</router-link>
       <router-link to="/about">About</router-link>
@@ -21,17 +21,14 @@
 <script>
 export default {
   name: "Navbar",
-  // data() {},
-  methods: {},
-  computed:{
-    showNavbar() {
-      document.querySelector("#navbar2").style.display = "flex";
-    },
-    removeNavbar() {
-      document.querySelector("#navbar2").style.display = "none";
-    },
-  },
+data(){
+  return{
+    nav: false,
+  };
+},
+
 };
+
 </script>
 <style scoped>
 #navbar1 {
@@ -47,9 +44,11 @@ export default {
 }
 
 #navbar2 {
-  display: none;
+  /* display: none; */
+  display: flex;
+  padding-left: 5px;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   z-index: 1;
   transition: 0.3s ease;
   width: 100%;
